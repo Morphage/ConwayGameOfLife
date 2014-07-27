@@ -235,12 +235,12 @@ public class View extends JFrame implements Observer {
 			grid.setEnabled(running); // while updating the user can't change the cells on the grid
 			
 			if(!running) {
-				timer.start();   // start the timer
+				timer.start();
 				running = true;
 				runButton.setText("Pause");
 			} 
 			else {
-				timer.stop();    // stop the timer
+				timer.stop();
 				running = false;
 				runButton.setText("Run");
 			}
